@@ -1,0 +1,32 @@
+.wrapper {
+    height: 130vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-100px) scale(101);
+}
+
+.menu_container {
+    margin-top: 160px;
+    padding-top: 10vh;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.35);
+}

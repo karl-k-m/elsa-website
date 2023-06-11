@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nav_logo {
+    z-index: 3;
+    margin-left: 6rem;
+    margin-right: 4rem;
+    width: auto;
+    height: auto;
+}
+
+.facebook_link img{
+    z-index: 3;
+    margin-left: 13rem;
+    margin-right: 6rem;
+    width: 60px;
+    height: auto;
+}
+
+.nav_links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links a {
+    padding: 30px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    transition: background-color 0.15s ease-out;
+}
+
+.nav_links a:hover {
+    background-color: rgba(75, 75, 75);
+}
