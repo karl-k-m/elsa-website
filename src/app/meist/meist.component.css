@@ -4,7 +4,88 @@
     overflow-y: auto;
     perspective: 5px;
 }
-  
+
+.landing {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+}
+
+.green {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.front {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.description {
+    max-width: 23%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 40%;
+    left: 30%;
+    z-index: 1000;
+}
+
+.klaver {
+    display: flex;
+    height: calc(100vh - 8.4vh);
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.klaver_desc {
+    margin-right: 2%;
+    max-width: 25%;
+    text-align: justify;
+}
+
+.klaver_desc h1, h2 {
+    text-align: center;
+}
+
+.history {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+    display: flex;
+    height: auto;
+    border-top: 1px solid black;
+}
+
+.history img {
+    border-top: none;
+}
+
+.history_desc {
+    text-align: justify;
+    margin-left: 3%;
+    max-width: 25%;
+}
+
+.history_desc h1, h2 {
+    text-align: center;
+}
+
+.contact {
+    background-color: #e2e1de;
+    border-top: 1px solid black;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 13.4vh;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     transform-style: preserve-3d;
     position: relative;
@@ -12,11 +93,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
 .no-parallax {
-    background-color: #111;
     z-index: 999;
 }
 
@@ -30,6 +109,24 @@ section {
     transform: translateZ(-1.5px) scale(1.5);
     background-size: 100%;
     z-index: -1;
+}
+
+.pidu {
+    height: 50vh;
+    width: auto;
+}
+
+.pidu .quote {
+    color: white;
+    text-align: center;
+}
+
+.pidu::after {
+    background: url('src/assets/event.webp');
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    background-size: cover;
 }
 
 .liha {
