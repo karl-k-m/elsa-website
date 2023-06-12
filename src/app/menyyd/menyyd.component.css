@@ -1,32 +1,31 @@
 .wrapper {
-    height: 130vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 1px;
-}
-
-header {
-    position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.background {
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    transform: translateZ(-100px) scale(101);
-}
-
-.menu_container {
-    margin-top: 160px;
-    padding-top: 10vh;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('src/assets/supp.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .menu_wrapper {
+    margin-top: auto;
+    padding-top: 8.4vh;
+    height: calc(100vh - 8.4vh); /* Adjust the height to leave space for the header */
     width: 50%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.35);
-}
+    overflow-y: auto; /* Enable vertical scrolling for .menu_wrapper */
+    padding-bottom: 8.4vh;
+  }
+  
+  .menu_container {
+    width: 100%; /* Set the width of .menu_container to 100% */
+  }
+  

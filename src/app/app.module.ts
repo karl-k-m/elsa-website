@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MenyydComponent } from './menyyd/menyyd.component';
+import { FooterComponent } from './footer/footer.component';
+import { KlaverComponent } from './klaver/klaver.component';
+import { MorvComponent } from './morv/morv.component';
+import { MeistComponent } from './meist/meist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    MenyydComponent
+    MenyydComponent,
+    FooterComponent,
+    KlaverComponent,
+    MorvComponent,
+    MeistComponent
   ],
   imports: [
     BrowserModule,
