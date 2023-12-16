@@ -6,6 +6,7 @@ import { MorvComponent } from './morv/morv.component';
 import { MeistComponent } from './meist/meist.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/meist', pathMatch: 'full' },
   { path: 'menyyd', component: MenyydComponent },
   { path: 'klaver', component: KlaverComponent },
   { path: 'morv', component: MorvComponent },

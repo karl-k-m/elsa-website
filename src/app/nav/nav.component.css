@@ -50,3 +50,7 @@
 .nav_links a:hover {
     background-color: rgba(75, 75, 75, 0.8);
 }
+
+div {
+  font-family: 'Times New Roman', Times, serif;
+}
